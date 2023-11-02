@@ -1,0 +1,230 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Global styles */
+* {
+    font-family: 'Roboto', sans-serif;
+}    
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DFF1F8;
+}
+
+main {
+    padding: 10px;
+    margin-right: 10%;
+}
+
+img {
+    margin: auto;
+    padding: 10px 20px;
+    max-width: 100%;
+    height: 300px;
+    object-fit: contain; 
+}
+
+/* Show action, neck relief, and pickup height */
+#showaction,
+#showneckrelief,
+#showpickupheight {
+    padding: 0px 10px;
+}
+
+
+#loginfields form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+#loginfields input[type="text"],
+#loginfields input[type="password"],
+#loginfields input[type="submit"] {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+#signupfields form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+#signupfields input[type="text"],
+#signupfields input[type="password"],
+#signupfields input[type="submit"] {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#currentuser a[href='login.php'] {
+    background-color: #7EC8E3;
+    color: #050A30;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+   
+/* Main styles */
+main ul {
+    list-style-type: none;
+}
+
+main li a {
+    text-decoration: none;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+p {
+    padding: 0px 10px;
+}
+
+h1 {
+    padding: 0px 10px;
+    color: #050A30;
+    font-size: 30px;
+}
+
+h4 {
+    clear: left;
+    color: #050A30;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+h5 {
+    clear: left;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* Form styling */
+#guitarselect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+  
+input[type="submit"] {
+    background-color: #7EC8E3;
+    color: #050A30;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+}
+  
+input[type="submit"]:hover {
+    background-color: #41698A;
+    color: white;
+    width: 200px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+/* Top navigation */
+.topnav {
+    background-color: #050A30;
+    overflow: hidden;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav a.active {
+    background-color: #41698A;
+    color: white;
+}
+
+.topnav a.home-icon {
+    background-color: #7EC8E3;
+    color: #050A30;
+}
+
+.topnav .hamburger-icon {
+    display: none;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.hamburger-icon {
+        display: block;
+        float: right;
+        color: #7EC8E3;
+        background-color: #050A30;
+        right: 0;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
